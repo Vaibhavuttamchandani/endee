@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  endee:
+    image: endeeio/endee:latest
+    ports:
+      - "7000:7000"
+    command: ["endee", "run"]
+  api:
+    build: .
+    depends_on:
+      - endee
+    ports:
+      - "8000:8000"

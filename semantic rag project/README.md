@@ -1,1 +1,0 @@
-# Endee Semantic RAG\n\nA semantic search and RAG system using Endee.
